@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Editor / tooling
+.vscode/
+.idea/
+.claude/
+.kiro/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local, user-specific config (org IdP URL, region). NEVER commit.
+kiro-auth.config
+
+# Never commit credentials or token caches
+*.token
+*token*.json
+data.sqlite3

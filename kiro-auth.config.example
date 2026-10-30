@@ -1,0 +1,21 @@
+# kiro-auth configuration — EXAMPLE / TEMPLATE
+#
+# Copy this file to `kiro-auth.config` (same folder) and fill in YOUR values.
+# The real `kiro-auth.config` is git-ignored and never committed.
+#
+# These values are used ONLY in the browser-login fallback message, to print
+# the exact `kiro-cli login` command for your org. The script works without
+# them (it just shows placeholders in that one message).
+#
+# You can also set these as environment variables instead of using this file:
+#   KIRO_AUTH_IDP_URL, KIRO_AUTH_REGION, KIRO_AUTH_LICENSE
+# Environment variables override this file.
+
+# Your IAM Identity Center start URL (find it with: kiro-cli user whoami)
+IDP_URL=https://your-org.awsapps.com/start
+
+# Your AWS region, e.g. us-east-1, eu-central-1
+REGION=your-region
+
+# License type: pro (Identity Center) or free (Builder ID / social)
+LICENSE=pro
